@@ -1,0 +1,915 @@
+/*
+ SCSS variables
+ */
+/*
+
+ */
+/*
+set font-size
+ */
+/* ==========================================================================
+   Normalize.scss settings
+   ========================================================================== */
+/**
+ * Includes legacy browser support IE6/7
+ *
+ * Set to false if you want to drop support for IE6 and IE7
+ */
+/* Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *  `em` units.
+ */
+@import url(https://fonts.googleapis.com/css?family=Lora|Roboto:400,300&subset=latin,cyrillic);
+/* line 23, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 36, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 50, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 71, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 88, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+/* line 98, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 110, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+/* line 120, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+a:active, a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 132, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 140, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 155, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 164, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Addresses styling not present in IE 8/9.
+ */
+/* line 200, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 239, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 247, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 255, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 259, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * 1. Remove border when inside `a` element in IE 8/9/10.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+/* line 314, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 325, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 336, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 344, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 353, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+/* line 362, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *  Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ * 4. Improves appearance and consistency in all browsers.
+ */
+/* line 389, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 407, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 418, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *  and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *  `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *  Known issue: inner spacing remains in IE 6.
+ */
+/* line 433, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 448, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 457, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 468, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+input {
+  line-height: normal; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ *  Known issue: excess padding remains in IE 6.
+ */
+/* line 478, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 494, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+/* line 504, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 515, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 524, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 3. Corrects text not wrapping in Firefox 3.
+ * 4. Corrects alignment displayed oddly in IE 6/7.
+ */
+/* line 537, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 550, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 559, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 570, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 575, E:/Web projects/mikejuice/bower_components/normalize-scss/_normalize.scss */
+td,
+th {
+  padding: 0; }
+
+/* ==========================================================================
+   base.scss settings
+   ========================================================================== */
+/* line 7, E:/Web projects/mikejuice/src/scss/base/_base.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 11, E:/Web projects/mikejuice/src/scss/base/_base.scss */
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+/* line 15, E:/Web projects/mikejuice/src/scss/base/_base.scss */
+a {
+  text-decoration: none; }
+  /* line 18, E:/Web projects/mikejuice/src/scss/utils/_mixins.scss */
+  a:hover, a:active, a:focus {
+    text-decoration: underline; }
+
+/* ==========================================================================
+   fonts.scss settings
+   ========================================================================== */
+/**
+ * Basic typography style for text
+ */
+/* line 4, E:/Web projects/mikejuice/src/scss/base/_typography.scss */
+.menu__item {
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 300;
+  color: gray;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.05rem; }
+
+/* line 14, E:/Web projects/mikejuice/src/scss/base/_typography.scss */
+.title {
+  font-size: 38px;
+  font-weight: normal;
+  font-family: "Lora";
+  padding-bottom: 20px; }
+
+/* line 21, E:/Web projects/mikejuice/src/scss/base/_typography.scss */
+.text_bio {
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 300;
+  line-height: 24px;
+  padding-bottom: 20px;
+  color: #323232; }
+
+/* line 30, E:/Web projects/mikejuice/src/scss/base/_typography.scss */
+.contacts {
+  font-size: 18;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-weight: 300;
+  color: #323232;
+  letter-spacing: 0.075rem; }
+
+/* ==========================================================================
+   helpers.scss settings
+   ========================================================================== */
+/**
+ * Clear inner floats
+ */
+/* line 9, E:/Web projects/mikejuice/src/scss/base/_helpers.scss */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table; }
+
+/**
+ * Main content container
+ */
+/* line 18, E:/Web projects/mikejuice/src/scss/base/_helpers.scss */
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 12, E:/Web projects/mikejuice/bower_components/susy/sass/susy/output/support/_clearfix.scss */
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  /* line 65, E:/Web projects/mikejuice/bower_components/susy/sass/susy/language/susy/_background.scss */
+  head {
+    display: block;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 999;
+    color: #333;
+    background: rgba(255, 255, 255, 0.25); }
+  /* line 66, E:/Web projects/mikejuice/bower_components/susy/sass/susy/language/susy/_background.scss */
+  head:before {
+    content: "|||";
+    display: block;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold; }
+  /* line 67, E:/Web projects/mikejuice/bower_components/susy/sass/susy/language/susy/_background.scss */
+  head:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: red; }
+  /* line 71, E:/Web projects/mikejuice/bower_components/susy/sass/susy/language/susy/_background.scss */
+  head:hover ~ .container,
+  head:hover ~ body .container {
+    position: relative; }
+    /* line 74, E:/Web projects/mikejuice/bower_components/susy/sass/susy/language/susy/_background.scss */
+    head:hover ~ .container:before,
+    head:hover ~ body .container:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      content: " ";
+      z-index: 998;
+      background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+      background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+      background-size: 8.33333%;
+      background-origin: content-box;
+      background-clip: content-box;
+      background-position: left top; }
+
+/* line 22, E:/Web projects/mikejuice/src/scss/base/_helpers.scss */
+.sections {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 100px; }
+
+/* ==========================================================================
+   header.scss settings
+   ========================================================================== */
+/* line 6, E:/Web projects/mikejuice/src/scss/layout/_header.scss */
+.container__header {
+  height: 100px;
+  border-bottom: 1px solid #bfbfbf;
+  background-color: #fafafa;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0; }
+
+/* line 17, E:/Web projects/mikejuice/src/scss/layout/_header.scss */
+.header__logo {
+  width: 16.66667%;
+  float: left;
+  margin-left: 0;
+  margin-right: -100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* line 24, E:/Web projects/mikejuice/src/scss/layout/_header.scss */
+.logo {
+  margin-left: 40px; }
+
+/* line 28, E:/Web projects/mikejuice/src/scss/layout/_header.scss */
+.header__menu {
+  width: 66.66667%;
+  float: left;
+  margin-left: 16.66667%;
+  margin-right: -100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* line 36, E:/Web projects/mikejuice/src/scss/layout/_header.scss */
+.list {
+  padding: 0; }
+
+/* line 40, E:/Web projects/mikejuice/src/scss/layout/_header.scss */
+.main__menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  padding: 0 15%; }
+
+/* line 47, E:/Web projects/mikejuice/src/scss/layout/_header.scss */
+.menu_link {
+  color: #808080; }
+  /* line 18, E:/Web projects/mikejuice/src/scss/utils/_mixins.scss */
+  .menu_link:hover, .menu_link:active, .menu_link:focus {
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #15a4ee;
+    color: #15a4ee; }
+
+/* line 57, E:/Web projects/mikejuice/src/scss/layout/_header.scss */
+.menu__item, .menu__lang, .menu__cv, .menu__separ {
+  display: inline-block; }
+
+/* line 61, E:/Web projects/mikejuice/src/scss/layout/_header.scss */
+.language__menu {
+  width: 16.66667%;
+  float: left;
+  margin-left: 83.33333%;
+  margin-right: -100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* line 69, E:/Web projects/mikejuice/src/scss/layout/_header.scss */
+.menu {
+  width: 65px;
+  margin-right: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  /* line 76, E:/Web projects/mikejuice/src/scss/layout/_header.scss */
+  .menu .menu__lang, .menu .menu__separ {
+    padding: 0 3px; }
+  /* line 80, E:/Web projects/mikejuice/src/scss/layout/_header.scss */
+  .menu li:nth-child(3) {
+    padding-right: 0; }
+
+/*
+hello-section
+ */
+/* line 5, E:/Web projects/mikejuice/src/scss/layout/_hello-section.scss */
+.section_hello {
+  height: calc(100vh - 100px);
+  min-height: 700px;
+  padding: 80px 0; }
+
+/* line 11, E:/Web projects/mikejuice/src/scss/layout/_hello-section.scss */
+.hello__image {
+  width: 16.66667%;
+  float: left;
+  margin-left: 16.66667%;
+  margin-right: -100%;
+  height: inherit;
+  display: flow;
+  min-width: 200px;
+  padding-right: span 0.5 of 12; }
+
+/* line 19, E:/Web projects/mikejuice/src/scss/layout/_hello-section.scss */
+.image_container {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  overflow: hidden;
+  background-color: #aaa; }
+
+/* line 27, E:/Web projects/mikejuice/src/scss/layout/_hello-section.scss */
+.avatar {
+  width: 200px;
+  height: auto; }
+
+/* line 32, E:/Web projects/mikejuice/src/scss/layout/_hello-section.scss */
+.hello_bio {
+  width: 45.83333%;
+  float: left;
+  margin-left: 37.5%;
+  margin-right: -100%; }
+  /* line 35, E:/Web projects/mikejuice/src/scss/layout/_hello-section.scss */
+  .hello_bio .title {
+    margin-top: 70px; }
+
+/* line 1, E:/Web projects/mikejuice/src/scss/layout/_portfolio-section.scss */
+.section_portfolio {
+  background-color: #d67; }
+
+/* line 5, E:/Web projects/mikejuice/src/scss/layout/_portfolio-section.scss */
+.portfolio {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+/* line 10, E:/Web projects/mikejuice/src/scss/layout/_portfolio-section.scss */
+.case__container {
+  height: 700px;
+  width: 100%;
+  overflow: hidden; }
+  /* line 15, E:/Web projects/mikejuice/src/scss/layout/_portfolio-section.scss */
+  .case__container .slider-wrap {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto; }
+    /* line 20, E:/Web projects/mikejuice/src/scss/layout/_portfolio-section.scss */
+    .case__container .slider-wrap .slider {
+      position: absolute;
+      width: 4400px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      z-index: 1; }
+      /* line 26, E:/Web projects/mikejuice/src/scss/layout/_portfolio-section.scss */
+      .case__container .slider-wrap .slider .slide {
+        height: 700px;
+        width: 1100px; }
+      /* line 31, E:/Web projects/mikejuice/src/scss/layout/_portfolio-section.scss */
+      .case__container .slider-wrap .slider .slide-first {
+        margin-left: 0; }
+
+/* line 38, E:/Web projects/mikejuice/src/scss/layout/_portfolio-section.scss */
+.arrow {
+  width: 40px;
+  height: 40px;
+  background-color: green;
+  position: absolute;
+  margin-top: 330px;
+  z-index: 2; }
+
+/* line 47, E:/Web projects/mikejuice/src/scss/layout/_portfolio-section.scss */
+.arrow-left {
+  left: 40px; }
+
+/* line 51, E:/Web projects/mikejuice/src/scss/layout/_portfolio-section.scss */
+.arrow-right {
+  right: 40px; }
+
+/* line 1, E:/Web projects/mikejuice/src/scss/layout/_contacts-section.scss */
+.section__contacts {
+  height: calc(100vh - 100px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+/* line 8, E:/Web projects/mikejuice/src/scss/layout/_contacts-section.scss */
+.section__addr {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  /* line 13, E:/Web projects/mikejuice/src/scss/layout/_contacts-section.scss */
+  .section__addr .flexbox-center {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 300px;
+    min-width: 720px; }
+
+/* line 24, E:/Web projects/mikejuice/src/scss/layout/_contacts-section.scss */
+.flexbox-center .contacts {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px 10px;
+  width: 50%; }
+
+/* line 32, E:/Web projects/mikejuice/src/scss/layout/_contacts-section.scss */
+.contact-image {
+  display: block;
+  height: 42px;
+  width: 42px;
+  overflow: hidden; }
+
+/* line 39, E:/Web projects/mikejuice/src/scss/layout/_contacts-section.scss */
+.sprite-img {
+  width: 42px;
+  height: 252px; }
+
+/* line 46, E:/Web projects/mikejuice/src/scss/layout/_contacts-section.scss */
+.img1 {
+  background: url(../images/sprite.png) 0px top; }
+
+/* line 46, E:/Web projects/mikejuice/src/scss/layout/_contacts-section.scss */
+.img2 {
+  background: url(../images/sprite.png) -42px top; }
+
+/* line 46, E:/Web projects/mikejuice/src/scss/layout/_contacts-section.scss */
+.img3 {
+  background: url(../images/sprite.png) -84px top; }
+
+/* line 46, E:/Web projects/mikejuice/src/scss/layout/_contacts-section.scss */
+.img4 {
+  background: url(../images/sprite.png) -126px top; }
+
+/* line 46, E:/Web projects/mikejuice/src/scss/layout/_contacts-section.scss */
+.img5 {
+  background: url(../images/sprite.png) -168px top; }
+
+/* line 46, E:/Web projects/mikejuice/src/scss/layout/_contacts-section.scss */
+.img6 {
+  background: url(../images/sprite.png) -210px top; }
+
+/* line 52, E:/Web projects/mikejuice/src/scss/layout/_contacts-section.scss */
+.contact-addr {
+  padding-left: 40px; }
+
+/* line 57, E:/Web projects/mikejuice/src/scss/layout/_contacts-section.scss */
+.section_contacts__secretsquare {
+  width: 40px;
+  height: 40px;
+  color: white;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  background-color: red;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  /* line 18, E:/Web projects/mikejuice/src/scss/utils/_mixins.scss */
+  .section_contacts__secretsquare:hover, .section_contacts__secretsquare:active, .section_contacts__secretsquare:focus {
+    background-color: #15a4ee; }
+  /* line 69, E:/Web projects/mikejuice/src/scss/layout/_contacts-section.scss */
+  .section_contacts__secretsquare .secret_link {
+    height: 100%;
+    width: 100%; }

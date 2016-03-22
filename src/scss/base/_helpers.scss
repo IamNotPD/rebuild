@@ -1,0 +1,26 @@
+
+/* ==========================================================================
+   helpers.scss settings
+   ========================================================================== */
+  
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+/**
+ * Main content container
+ */
+.container {
+	@include container;
+}
+
+.sections {
+	display:flex;
+    flex-direction:column;
+	padding-top: 100px;
+}

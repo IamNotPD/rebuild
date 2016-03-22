@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mike Juice || Sandbox</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="container">
+  <header class="container__header">
+    <div class="header__logo">
+      <img class="logo" src="images/logo_.png" height="56" width="156">
+    </div>
+    <nav class="header__menu">
+      <ul class="list main__menu">
+        <li class="menu__item"><a class="link menu_link" href="#">Обо мне</a></li>
+        <li class="menu__item"><a class="link menu_link" href="#">Портфолио</a></li>
+        <li class="menu__item deactive"><a class="link menu_link" href="#">Блок</a></li>
+        <li class="menu__item"><a class="link menu_link" href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="language__menu">
+      <ul class="list menu">
+        <li class="menu__lang"><a class="link menu_link" href="#">ru</a></li>
+        <li class="menu__separ left_separ">|</li>
+        <li class="menu__lang"><a class="link menu_link" href="#">en</a></li>
+        <li class="menu__cv"><a class="link menu_link" href="#">cv</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="sections">
+    <section class="section section_hello">
+      <div class="hello__image">
+        <div class="image_container">
+          <!--<img class="avatar" src="images/MyAvatarFace.jpg" alt="So cute" />-->
+        </div>
+      </div>
+      <article class="hello_bio">
+        <h1 class="title">
+          Меня зовут Михаил
+        </h1>                        
+        <p class="text text_bio">
+          Я закончил физико-математический факультет Мурманского Государственного Педагогического Университета — вроде как, учитель математики-информатики :) Я был PHP программистом, но как показали поиски работы в Мурманске, молодые специалисты в этой сфере во время кризиса 2008 года никому оказались не нужны, и я ушел в дизайн…
+        </p>
+        <p class="text text_bio">
+          Так началась моя новая история. Проработав почти во всех крупных рекламных компаниях Мурманска я продолжаю искать команду профессионалов, которая сможет что-то дать мне, а я что-то смогу дать ей :)
+        </p>
+      </article>
+    </section>
+      <section class="section section_portfolio">
+        <div class="portfolio">
+          <div class="case__container" id="case1">
+            <div class="slider-wrap">
+              <div class="slider">
+                <div style="background-color: #678" class="slide slide-first">text</div>
+                <div style="background-color: #f5d" class="slide">text2</div>
+                <div style="background-color: #8a2" class="slide">text3</div>
+                <div style="background-color: #149" class="slide">text4</div>
+              </div>
+            </div>
+            <div class="arrow arrow-left" onclick="Slider.left('case1')"></div>
+            <div class="arrow arrow-right active" onclick="Slider.right('case1')"></div>
+          </div>
+          <div class="case__container" id="case2">
+            <div class="slider-wrap">
+              <div class="slider">
+                <div style="background-color: #2f8" class="slide slide-first">text</div>
+                <div style="background-color: #faa" class="slide">text2</div>
+                <div style="background-color: #3ff" class="slide">text3</div>
+                <div style="background-color: #993" class="slide">text4</div>
+              </div>
+            </div>
+            <div class="arrow arrow-left" onclick="Slider.left('case2')"></div>
+            <div class="arrow arrow-right active" onclick="Slider.right('case2')"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section section__contacts">
+        <div class="section__addr">
+          <div class="flexbox-center">
+            <div class="contacts"><span class="contact-image img1"></span><span class="contact-addr">leah-Сim</span></div>
+            <div class="contacts"><span class="contact-image img2"></span><span class="contact-addr">mike.juice</span></div>
+            <div class="contacts"><span class="contact-image img3"></span><span class="contact-addr">some text</span></div>
+            <div class="contacts"><span class="contact-image img4"></span><span class="contact-addr">mesh0ck</span></div>
+            <div class="contacts"><span class="contact-image img5"></span><span class="contact-addr">I'm waiting for invite :)</span></div>
+            <div class="contacts"><span class="contact-image img6"></span><span class="contact-addr">info@mikejuice.ru</span></div>
+          </div>
+        </div>
+        <div class="section_contacts__secretsquare"><a href="http://secret" class="secret_link"></a></div>
+      </section>
+  </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

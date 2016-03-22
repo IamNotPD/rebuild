@@ -1,0 +1,73 @@
+.section__contacts {
+	height: calc(100vh - 100px);
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.section__addr {
+	flex-grow: 2;
+	display: flex;
+	justify-content: center;
+
+	.flexbox-center {
+		align-self: center;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		height: 300px;
+		min-width: 720px;
+	}
+}
+
+.flexbox-center {
+	.contacts {
+		display: flex;
+		align-items: center;
+		margin: 25px 10px;
+		width: 50%;
+	}
+}
+
+.contact-image {
+	display: block;
+	height: 42px;
+	width: 42px;
+	overflow: hidden;
+}
+
+.sprite-img {
+	width: 42px;
+	height: 252px;
+}
+
+@for $pos from 0 through 5 {
+	$x: -(42px * $pos);
+	.img#{$pos+1} {
+		background: url(../images/sprite.png) $x top;
+	}
+}
+
+
+.contact-addr {
+	padding-left: 40px;
+}
+
+
+.section_contacts__secretsquare {
+	width: 40px;
+	height: 40px;
+	color: white;
+	align-self: flex-end;
+	background-color: red;
+	display: flex;
+	align-items: center;
+	@include on-event {
+		background-color: $accsent-color;
+	}
+
+	.secret_link {
+		height: 100%;
+		width: 100%;
+	}
+}
